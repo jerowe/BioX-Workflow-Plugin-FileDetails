@@ -65,15 +65,15 @@
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://bitbucket.org/jerowe/BioX-Workflow-Plugin-FileDetails/issues"
+         "web" : "https://github.com/jerowe/BioX-Workflow-Plugin-FileDetails/issues"
       },
-      "homepage" : "https://bitbucket.org/jerowe/BioX-Workflow-Plugin-FileDetails",
+      "homepage" : "https://github.com/jerowe/BioX-Workflow-Plugin-FileDetails",
       "repository" : {
          "type" : "git",
-         "url" : "git://git@bitbucket.org:jerowe/BioX-Workflow-Plugin-FileDetails.git",
-         "web" : "https://bitbucket.org/jerowe/BioX-Workflow-Plugin-FileDetails"
+         "url" : "https://github.com/jerowe/BioX-Workflow-Plugin-FileDetails.git",
+         "web" : "https://github.com/jerowe/BioX-Workflow-Plugin-FileDetails"
       }
    },
-   "version" : "0.07"
+   "version" : "0.08"
 }
 
