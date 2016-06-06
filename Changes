@@ -1,6 +1,7 @@
 Revision history for BioX-Workflow-Plugin-FileDetails
 
 {{$NEXT}}
+    - Moving to github
 
 0.07  2016-06-06 13:52:18 GST
     - Added travis build
