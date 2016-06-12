@@ -1,6 +1,7 @@
 Revision history for BioX-Workflow-Plugin-FileDetails
 
 {{$NEXT}}
+    - Bugfix in filedetails.pl added predicate has_line_count
 
 0.08  2016-06-06 14:50:23 GST
     - Moving to github

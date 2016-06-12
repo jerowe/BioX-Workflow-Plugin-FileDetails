@@ -4,6 +4,7 @@ our $VERSION = '0.08';
 
 use Moose::Role;
 use List::Uniq ':all';
+use Data::Dumper;
 
 has 'collect_outdirs' => (
     traits  => ['Array'],
@@ -18,6 +19,7 @@ has 'collect_outdirs' => (
 
 after 'process_template' => sub {
     my $self = shift;
+    my $data = shift;
 
     $self->add_collect_outdirs($self->outdir);
     $self->add_collect_outdirs($self->indir);

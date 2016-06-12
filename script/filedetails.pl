@@ -35,6 +35,7 @@ has 'line_count' => (
     required => 0,
     default => 1,
     documentation => 'q(Get a line count per file)',
+    predicate => 'has_line_count',
 );
 
 package My::App::Run;
