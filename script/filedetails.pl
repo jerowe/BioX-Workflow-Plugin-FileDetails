@@ -56,7 +56,11 @@ my @files = File::Find::Rule->file()->in( $self->check_dir);
 if($self->print_dir){
     make_path($self->check_dir."/meta");
 }
+
 my $human = Number::Bytes::Human->new(bs => 1024, round_style => 'round', precision => 2);
+
+print "# Directory\n\n";
+print "## ".$self->check_dir."\n\n";
 
 print "|| File || MD5 || Size (bytes) || Size (human) || File Creation Time || Last access time || Last modify time ||\n";
 

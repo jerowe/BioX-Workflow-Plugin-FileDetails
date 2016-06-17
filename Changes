@@ -2,6 +2,8 @@ Revision history for BioX-Workflow-Plugin-FileDetails
 
 {{$NEXT}}
 
+    - Made more changes to formatting for easy upload to JIRA
+
 0.09  2016-06-17 08:49:31 GST
     - Bugfix in filedetails.pl added predicate has_line_count
     - Changed format of output
