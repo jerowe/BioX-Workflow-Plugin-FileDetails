@@ -2,6 +2,8 @@ Revision history for BioX-Workflow-Plugin-FileDetails
 
 {{$NEXT}}
 
+0.10  2016-06-17 08:53:13 GST
+
     - Made more changes to formatting for easy upload to JIRA
 
 0.09  2016-06-17 08:49:31 GST
