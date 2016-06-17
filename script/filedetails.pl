@@ -17,7 +17,7 @@ has 'print_dir' => (
     is => 'rw',
     isa => 'Bool',
     required => 0,
-    default => 1,
+    default => 0,
     documentation => q(Create a directory for metadata, and write details to file self->check_dir/meta/file.meta Defaults to yes.)
 );
 
@@ -58,6 +58,8 @@ if($self->print_dir){
 }
 my $human = Number::Bytes::Human->new(bs => 1024, round_style => 'round', precision => 2);
 
+print "|| File || MD5 || Size (bytes) || Size (human) || File Creation Time || Last access time || Last modify time ||\n";
+
 foreach my $file (@files) {
     $file = File::Spec->rel2abs($file);
     my $details = File::Details->new( $file );
@@ -67,16 +69,7 @@ foreach my $file (@files) {
     my $hsize = $human->format($size);
 
 my $info =<<EOF;
-
-
-## $file
-
-|MD5| $hash|
-|Size (bytes)| $size|
-|Size (human)| $hsize|
-|File creation time| $ctime|
-|Last access   time| $actime|
-|Last modify   time| $mtime|
+| $basename | $hash | $size | $hsize | $ctime | $actime | $mtime |
 EOF
 
 if($self->has_line_count){
@@ -88,10 +81,9 @@ if($self->has_line_count){
         $line_count = `wc -l < $file`;
     }
     $info .=<<EOF;
-|Line Count| $line_count|
-
-
+ $line_count|
 EOF
+    $info .="\n";
 
 }
 

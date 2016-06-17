@@ -25,7 +25,7 @@ size, human readable size, date created, last accessed, and last modified.
 
 # AUTHOR
 
-Jillian Rowe &lt;jillian.e.rowe@gmail.com>
+Jillian Rowe <jillian.e.rowe@gmail.com>
 
 # Acknowledgements
 
