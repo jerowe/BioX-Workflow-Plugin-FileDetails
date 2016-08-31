@@ -1,6 +1,8 @@
 Revision history for BioX-Workflow-Plugin-FileDetails
 
 {{$NEXT}}
+
+0.11  2016-08-31 20:09:59 GST
     - Bugfix for filedetails - no basename was causing it to crash
 
 0.10  2016-06-17 08:53:13 GST
